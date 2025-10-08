@@ -34,3 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+doc link - https://app.eraser.io/workspace/s91ri6qBBu5G9VSh8YdA
+shadcn for ui 
+logo placeholder 
+magic ui for video. 
+aceternity ui 
+clerk for login and authentication 
+convex for database to start npm convex dev
+Arcjet for subscription validation
+openrouter.ai
+Aceternity ui for itinarary ui
