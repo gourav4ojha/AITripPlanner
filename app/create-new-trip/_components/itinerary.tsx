@@ -24,16 +24,6 @@ const SafeImage = ({ src, alt, width, height, className }: { src: string; alt: s
       />
     );
   }
-  
-  return (
-    <Image 
-      src={src} 
-      alt={alt}
-      width={width}
-      height={height}
-      className={className}
-    />
-  );
 };
 
 function Itinerary() {

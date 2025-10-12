@@ -40,8 +40,9 @@ shadcn for ui
 logo placeholder 
 magic ui for video. 
 aceternity ui 
-clerk for login and authentication 
+clerk for login and authentication  and for payment handeling
 convex for database to start npm convex dev
 Arcjet for subscription validation
 openrouter.ai
 Aceternity ui for itinarary ui
+mapbox to add interactive 3d global map

@@ -4,7 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'  
-import { SignInButton, useUser } from '@clerk/nextjs'
+import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
+import { usePathname } from 'next/navigation'
 
 const menuOptions = [
   { name: 'Home', path: '/' },
@@ -14,6 +15,7 @@ const menuOptions = [
 
 function Header() {
   const { user } = useUser(); 
+  const path=usePathname();
 
   return (
     <div className='flex justify-between items-center p-4'>
@@ -35,15 +37,23 @@ function Header() {
       </div>
 
       {/* get started */}
+      <div className='flex gap-5 items-center'>
+
       {!user ? (
         <SignInButton mode='modal'>
           <Button>Get Started</Button>
         </SignInButton>
       ) : (
+        path=='/create-new-trip'?
+        <Link href={'/my-trips'}>
+          <Button>My Trips</Button>
+        </Link>:
         <Link href={'/create-new-trip'}>
           <Button>Create new Trip</Button>
         </Link>
       )}
+      <UserButton/>
+      </div>
     </div>
   )
 }
